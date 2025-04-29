@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tienda virtual</string>
+
+
+    <!--Login de cliente-->
+    <string name="txtloginC">Login de cliente</string>
+    <string name="btnLoginC">Ingresar</string>
+    <string name="tvRegistrarC">Registrarme</string>
+
+    <!--Registro cliente-->
+    <string name="txtRegistroC">Registro de cliente</string>
+    <string name="etNombresC">Nombres completos</string>
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Contraseña</string>
+    <string name="txtNoCuenta">¿No tienes cuenta?</string>
+    <string name="etCPassword">Confirmar Contraseña</string>
+    <string name="btnRegistrarC">Completar Registro</string>
+
+</resources>
