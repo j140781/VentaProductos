@@ -1,0 +1,105 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtMontoPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monto a pagar: S/. 0.00"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <RadioGroup
+            android:id="@+id/rgMetodoPago"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pagar con Tarjeta" />
+
+            <RadioButton
+                android:id="@+id/rbVirtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pagar con Yape/Plin u otros" />
+        </RadioGroup>
+
+        <!-- Campos para TARJETA -->
+        <LinearLayout
+            android:id="@+id/layoutTarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="24dp">
+
+            <EditText
+                android:id="@+id/edtNumeroTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Tarjeta"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtFechaVencimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha de Vencimiento (MM/AA)"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtCVV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:inputType="numberPassword" />
+        </LinearLayout>
+
+        <!-- Campos para YAPE/PLIN -->
+        <LinearLayout
+            android:id="@+id/layoutVirtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingTop="24dp">
+
+            <EditText
+                android:id="@+id/edtCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Número de Celular"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/edtClaveVirtual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Clave Virtual"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPagar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pagar"
+            android:layout_marginTop="24dp"
+            android:onClick="irhomeactivity"/>
+    </LinearLayout>
+</ScrollView>
