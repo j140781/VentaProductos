@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/button_back"
+        android:onClick="irhomeactivity"
+        android:contentDescription="Volver" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del producto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imgProducto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción del producto"
+        android:paddingTop="8dp" />
+
+    <TextView
+        android:id="@+id/txtPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio: S/ 3500"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:paddingTop="8dp" />
+
+    <Button
+        android:id="@+id/btnAgregarCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar al carrito"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

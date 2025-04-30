@@ -66,7 +66,7 @@
                 android:id="@+id/edtCVV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="CVV"
+                android:hint=" CVV"
                 android:inputType="numberPassword" />
         </LinearLayout>
 
