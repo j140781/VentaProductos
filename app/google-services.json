@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1513616594",
+    "project_id": "tecnoexpress-fc92c",
+    "storage_bucket": "tecnoexpress-fc92c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1513616594:android:972370b037c78012b7290b",
+        "android_client_info": {
+          "package_name": "com.example.tecnoexpress"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqO5NKATWvr_YmLj_oLuAwEp09Bt2Bidk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
